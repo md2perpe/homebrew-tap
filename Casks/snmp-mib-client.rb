@@ -1,9 +1,9 @@
 cask "snmp-mib-client" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.5"
-  sha256 arm:   "df0d7864ed3b93ff3d3194760dae14eda2dc02a89bee093ec76b05a515ddf8d1",
-         intel: "8cc29cff17ac140c538638686eb2444d372d71b4714b8a5d9a098d74cf89bbd3"
+  version "0.1.6"
+  sha256 arm:   "66f631252e43b18fdf4684b299e1f0bb88858daf464e38c63d5fcc5abaff215b",
+         intel: "20d9f315c0af7c27b5526d61f16f741c022c1f1c20d16db929c50216403f776c"
 
   url "https://github.com/md2perpe/snmp-browser/releases/download/v#{version}/SNMP.MIB.Client_#{version}_#{arch}.dmg"
   name "SNMP MIB Client"
