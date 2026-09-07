@@ -17,10 +17,8 @@ cask "snmp-mib-client" do
   # The app isn't code-signed/notarized (no paid Apple Developer account),
   # so macOS Gatekeeper would otherwise report it as "damaged". Strip the
   # quarantine attribute right after install so it opens normally.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-cr", "#{appdir}/SNMP MIB Client.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-cr", "{{appdir}}/SNMP MIB Client.app"]
   end
 
   zap trash: [
