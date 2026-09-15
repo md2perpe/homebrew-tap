@@ -7,7 +7,7 @@ cask "bryllun" do
 
   url "https://github.com/md2perpe/bryllun/releases/download/v#{version}/Bryllun_#{version}_#{arch}.dmg"
   name "Bryllun"
-  desc "Desktop client for browsing MIB/YANG files and querying SNMP, gNMI, and NETCONF devices"
+  desc "Desktop client for SNMP, gNMI, and NETCONF devices"
   homepage "https://github.com/md2perpe/bryllun"
 
   depends_on :macos
