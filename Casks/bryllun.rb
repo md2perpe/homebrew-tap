@@ -1,9 +1,9 @@
 cask "bryllun" do
   arch arm: "aarch64", intel: "x64"
 
-  version "0.1.6"
-  sha256 arm:   "66f631252e43b18fdf4684b299e1f0bb88858daf464e38c63d5fcc5abaff215b",
-         intel: "20d9f315c0af7c27b5526d61f16f741c022c1f1c20d16db929c50216403f776c"
+  version "1.0.0"
+  sha256 arm:   "967dba6c459ba67f19a6afaeccb71c7324e7368121d54d6862b64a4477db6662",
+         intel: "e204e70776609a1293613e292c9902ff767259f1eed1441fafcb17098b64788f"
 
   url "https://github.com/md2perpe/bryllun/releases/download/v#{version}/Bryllun_#{version}_#{arch}.dmg"
   name "Bryllun"
